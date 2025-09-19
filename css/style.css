@@ -1,0 +1,155 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body{
+  background-color: rgb(128, 172, 234);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+h1{
+  border: 1px solid rgb(255, 252, 252);
+  width:auto;
+  height: 10%;
+  padding:25px;
+  background-color: rgb(56, 56, 162);
+  border-radius: 15px;
+  color:aliceblue;
+}
+
+h2{
+  font-size: 25px;
+  color:white;
+  background-color: rgb(72, 72, 112);
+  text-align: center;
+  width:100%;
+  height:100px;
+  padding:25px 0px 0px 0px;
+}
+
+.maincontainer{
+  display: flex;
+  flex:1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+  height:80%;
+  padding:25px 50px 25px 50px;
+}
+
+.parent{
+  background-color: white;
+  display:flex;
+  width:50%;
+  height: 30%;
+  background-color: rgb(144, 160, 225);
+  border-radius: 20px;
+  box-shadow: 0 25px 30px rgba(0, 0, 0, 0.44);
+
+
+}
+
+.ftoc , .ctof{
+  display:flex;
+  flex-direction: column;
+  flex:1;
+  justify-content: center;
+  align-items: center;
+}
+
+.ftoc{
+  border-right: 2px solid white;
+}
+
+p{
+  margin:10px;
+}
+
+
+input{
+  margin:25px;
+  width:150px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+input:hover{
+  cursor: pointer;
+}
+
+input:hover{
+  background-color: lightblue;
+}
+
+img{
+  max-width: 20%;
+  max-height: 20%;
+}
+
+span{
+  font-weight: 300;
+  margin:10px;
+}
+
+h3{
+  text-decoration: underline;  
+}
+
+uL{
+  background-color: blanchedalmond;
+  height: 6rem;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.44);
+  padding:10px;
+}
+
+li{
+  list-style-type: none;
+  color: brown;
+  text-align: center;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media screen and (max-width:764px) {
+  body{
+    width:100%;
+  }
+  
+  h1{
+    width:100%;
+    align-content: center;
+  }
+
+  .parent, h1, h2, input, .ftoc{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin:auto;
+    border:none;
+  }
+
+  .ctof, .ftoc{
+    gap:50px;
+  }
+  
+  uL, img{
+    display:none;
+  }
+}
